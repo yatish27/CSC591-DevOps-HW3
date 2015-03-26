@@ -7,6 +7,11 @@ gem 'json'
 gem 'thin'
 gem 'foreman'
 gem 'redis-sinatra'
+gem "sinatra-activerecord"
+gem "sqlite3"
+gem "rake"
+gem 'delayed_job_active_record'
+gem 'sidekiq'
 
 group :development do 
   gem "rspec" 
