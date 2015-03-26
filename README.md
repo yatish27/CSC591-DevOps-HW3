@@ -1,24 +1,19 @@
 # CSC 591 DevOps HW3
 
-##  Simple three tier web application (front-end/service/storage) Option 1
+##  Simple three tier web application Option 1
 It is a three tier web application built using Redis/sinatra. It also has persistent database layer SQLITE.
 
 
 ## Setup
 To run the application
-
     
-    bundle install
-    
+    bundle install    
 
 to make sure all the dependecies are installed
-
 Start the application using foreman
-
     
     foreman start
  
-
 ## Evaluation
 ### Simple three tier web app
 We are using Sinatra which is Ruby web framework. We have implemented all three layer. The frontend layer is HTML/CSS(Bootstarp CSS framework).
