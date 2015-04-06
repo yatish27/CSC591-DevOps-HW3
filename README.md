@@ -5,11 +5,10 @@ It is a three tier web application built using Redis/sinatra. It also has persis
 
 
 ## Setup
-To run the application
+To install all teh dependencies
     
     bundle install    
 
-to make sure all the dependecies are installed
 Start the application using foreman
     
     foreman start
@@ -26,8 +25,8 @@ The index pages fetches the most recent websites from the redis cache. It does n
 
 ### Queue
 When writing the websites using the form in the index page it is stored in the queue in the redis server. There is background worker which fetches the data from the queue and then stores the data in SQLite.
-When multiple request come in it does not wait for the request to complete the database transaction. The database commit is done by teh background process.
-check `worker.rb` for its code. We are using `sidekiq` which is used for background processing.
+When multiple request come in it does not wait for the request to complete the database transaction. The database commit is done by the background process.
+check `worker.rb` for its code. We are using `sidekiq` for background processing.
 
 ### Multiple instances
 It has multiple instances of the the services running. one running on port 5001 and the other port 5002. We can add more instances by adding them in `Procfile`. To manage all the instances easily we are using `foreman`
