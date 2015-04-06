@@ -5,7 +5,7 @@ It is a three tier web application built using Redis/sinatra. It also has persis
 
 
 ## Setup
-To install all teh dependencies
+To install all the dependencies
     
     bundle install    
 
